@@ -13,7 +13,7 @@ const searchProduct2 = (value) => {
       products.forEach((product, index) => {
           html += '<tr>';
           html += `<td>${index + 1} </td>`;
-          html += `<td><img src="/image/upload/${product.image}" style="height: 50px; width:50px;"></td>`
+          html += `<td><img src="/image/upload/${product.image}" style="height: 80px; width:80px;"></td>`
           html += `<td>${product.name}</td>`;
           html += `<td>${product.amount}</td>`;
           html += `<td>${product.price}</td>`;

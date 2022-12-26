@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="/css/user/default.css">
     <!-- Main css -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- notify -->
+    <script src="/js/user/notify.min.js"></script>
     <!-- Responsive css -->
     <link rel="stylesheet" href="/css/user/responsive.css">
     <!-- Modernizer js -->
@@ -45,11 +47,11 @@
 
     <!-- Main Wrapper Start Here -->
     <div class="wrapper">
-         <!-- Main Header Area Start Here -->
-         <header>
-             <%- include ('../navigationBar/header')%>
-         </header>
-             <!-- Header Bottom End Here -->
+        <!-- Main Header Area Start Here -->
+        <header>
+            <%- include ('../navigationBar/header')%>
+        </header>
+        <!-- Header Bottom End Here -->
 
         <!-- Product Thumbnail Start -->
         <div class="main-product-thumbnail ptb-100 ptb-sm-60">
@@ -61,7 +63,8 @@
                             <!-- Thumbnail Large Image start -->
                             <div class="tab-content">
                                 <div id="thumb1" class="tab-pane fade show active">
-                                    <a data-fancybox="images" href="/image/upload/<%=product.image%>"><img src="/image/upload/<%=product.image%>" alt="product-view"></a>
+                                    <a data-fancybox="images" href="/image/upload/<%=product.image%>"><img
+                                            src="/image/upload/<%=product.image%>" alt="product-view"></a>
                                 </div>
 
                             </div>
@@ -71,7 +74,9 @@
                         <!-- Thumbnail Description Start -->
                         <div class="col-lg-7">
                             <div class="thubnail-desc fix">
-                                <h3 class="product-header"><%= product.name%></h3>
+                                <h3 class="product-header">
+                                    <%= product.name%>
+                                </h3>
                                 <div class="rating-summary fix mtb-10">
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
@@ -82,11 +87,15 @@
                                     </div>
                                 </div>
                                 <div class="pro-price mtb-30">
-                                    <p class="d-flex align-items-center"><span class="prev-price">16.51</span><span class="price">$<%= product.price%></span></p>
+                                    <p class="d-flex align-items-center"><span class="prev-price">16.51</span><span
+                                            class="price">$<%= product.price%></span></p>
                                 </div>
-                                <p class="mb-20 pro-desc-details"><%= product.description%></p>
+                                <p class="mb-20 pro-desc-details">
+                                    <%= product.description%>
+                                </p>
                                 <div class="socila-sharing mt-25">
-                                    <a href="#quick-view" onclick="showAddCart2('<%=product._id%>')" class="btn btn-secondary"> +
+                                    <a href="#quick-view" onclick="showAddCart2('<%=product._id%>')"
+                                        class="btn btn-secondary"> +
                                         Thêm vào giỏ</a>
                                 </div>
                             </div>
@@ -101,15 +110,15 @@
         </div>
         <!-- Product Thumbnail End -->
 
-            <!-- Container End -->
-        </div>
-        <!-- Realated Products End Here -->
-       </div>
-       <!-- Footer Area Start Here -->
-       <footer class="off-white-bg2 pt-95 bdr-top pt-sm-55">
-           <%- include ('../navigationBar/footer')%>
-       </footer>
-        <!-- Quick View Content End -->
+        <!-- Container End -->
+    </div>
+    <!-- Realated Products End Here -->
+    </div>
+    <!-- Footer Area Start Here -->
+    <footer class="off-white-bg2 pt-95 bdr-top pt-sm-55">
+        <%- include ('../navigationBar/footer')%>
+    </footer>
+    <!-- Quick View Content End -->
     </div>
     <!-- Main Wrapper End Here -->
 
@@ -137,7 +146,9 @@
     <script src="/js/user/bootstrap.min.js"></script>
     <!-- Plugin js -->
     <script src="/js/user/plugins.js"></script>
-
+    <!-- notify -->
+    <script src="/js/user/notify.min.js"></script>
+    <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"
         integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
